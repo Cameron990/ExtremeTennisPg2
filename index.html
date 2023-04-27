@@ -8,21 +8,6 @@
             background-color: black;
             color: white;
             padding: 10px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-        }
-
-        .logo img {
-            width: 50px;
-            height: 50px;
         }
 
         h1 {
@@ -37,17 +22,39 @@
                 font-size: 24px;
             }
 
+            h1 img {
+                width: 50px;
+                height: 50px;
+            }
+
         p {
             font-size: 18px;
             margin-bottom: 10px;
         }
 
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+            .logo img {
+                width: 200px;
+                height: auto;
+            }
+
+        .twitter-timeline {
+            margin: 0 auto;
+            width: 500px;
+            height: 600px;
+            margin-bottom: 40px;
+        }
+
         iframe {
-            margin-top: 50px;
-            margin-right: 50px;
-            width: 50%;
-            height: 300px;
-            border: none;
+            float: right;
+            clear: right;
+            margin-left: 20px;
         }
     </style>
 </head>
