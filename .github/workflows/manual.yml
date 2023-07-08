@@ -1,0 +1,13 @@
+name: manual
+on: push
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test
+        run: |
+          echo "CANDY_SECURE=$CANDY_SECURE"
+          echo "PEAR_SECURE=$PEAR_SECURE"
+        env: 
+          CANDY_SECURE: ${{ secrets.CANY_APPLE_SECURE }}
+          PEAR_SECURE: ${{ secrets.PEAR_MAGIC_SECURE }}
